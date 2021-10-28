@@ -30,3 +30,8 @@ An array which contains the nodes which are examined.
 
 ### Algorithm
 
+### Output:
+
+![path from node A to node G](images/experiment1a.png)
+![path from node C to node G](images/experiment1b.png)
+
