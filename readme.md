@@ -38,7 +38,7 @@ An array which contains the nodes which are examined.
 ## Experiment 2: Candidate Elimination Algorithm
 #### Problem Statement
 
-For a givrn set of training data examples stored in a CSV file, implement and demonstrate that Candidate-Elimination Algorithm to output a description of the set of all hypothesis consistent with the training examples.
+For a given set of training data examples stored in a CSV file, implement and demonstrate that Candidate-Elimination Algorithm to output a description of the set of all hypothesis consistent with the training examples.
 
 #### Task:
 
