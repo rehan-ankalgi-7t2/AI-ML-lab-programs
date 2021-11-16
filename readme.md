@@ -35,3 +35,28 @@ An array which contains the nodes which are examined.
 ![path from node A to node G](images/experiment1a.png)
 ![path from node C to node G](images/experiment1b.png)
 
+## Experiment 1: Candidate Elimination Algorithm
+#### Problem Statement
+
+For a givrn set of training data examples stored in a CSV file, implement and demonstrate that Candidate-Elimination Algorithm to output a description of the set of all hypothesis consistent with the training examples.
+
+#### Task:
+
+The Candidate-Elimination algorithm computes the VERSION SPACE containing all hypothesis from H that are consistent with an observed sequence of training examples.
+
+#### Dataset: finds.csv
+
+| Sky     | AirTemp   | Humidity   | Wind     | Water   | Forecast   | EnjoySport   |
+| :---    | :---      | :---       | :---     | :---    | :---       | :---         |
+| Sunny   | Warm      | Normal     | Strong   | Warm    | same       | Yes          |
+| Sunny   | Warm      | High       | Strong   | Warm    | same       | Yes          |
+| Rainy   | Cold      | High       | Strong   | Warm    | change     | No           |
+| Sunny   | Warm      | High       | Strong   | Warm    | change     | Yes          |
+
+#### Expected Output:
+`Final S: ['Sunny' 'Warm' '?' 'Strong' '?' '?']
+Final G: [['Sunny', '?', '?', '?', '?', '?'], ['?', 'Warm', '?', '?', '?', '?']]`
+
+#### Actual Output screenshot:
+![Final S and Final G](images/experiment2.png)
+
