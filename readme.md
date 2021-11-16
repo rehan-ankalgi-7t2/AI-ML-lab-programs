@@ -35,7 +35,7 @@ An array which contains the nodes which are examined.
 ![path from node A to node G](images/experiment1a.png)
 ![path from node C to node G](images/experiment1b.png)
 
-## Experiment 1: Candidate Elimination Algorithm
+## Experiment 2: Candidate Elimination Algorithm
 #### Problem Statement
 
 For a givrn set of training data examples stored in a CSV file, implement and demonstrate that Candidate-Elimination Algorithm to output a description of the set of all hypothesis consistent with the training examples.
