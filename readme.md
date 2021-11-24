@@ -60,3 +60,16 @@ Final G: [['Sunny', '?', '?', '?', '?', '?'], ['?', 'Warm', '?', '?', '?', '?']]
 #### Actual Output screenshot:
 ![Final S and Final G](images/experiment2.png)
 
+## Experiment 3: ID3 Algorithm
+#### Problem Statement
+
+Write a program to demonstrate the working of the decision tree based ID3 Algorithm. use an appropriate dataset for building the decision tree and apply this knowledge to classify a new sample.
+
+#### Task:
+
+ID3 determines the information gain for each candidate attribute the selects the one with highest information gain as the root node of the tree. the information gain values for all the four attributes are calculated using the following formula:
+
+
+
+#### Dataset: Weather.csv
+
