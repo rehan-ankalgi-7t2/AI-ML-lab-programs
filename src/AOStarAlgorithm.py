@@ -1,4 +1,3 @@
-
 class Graph:
     def __init__(self, graph, heuristicNodeList, startNode):
         self.graph = graph
@@ -57,15 +56,15 @@ class Graph:
             minimumCost, childNodeList = self.computeMinimumCostChildNodes(v)
         self.setHeuristicNodeValue(v, minimumCost)
         self.setStatus(v,len(childNodeList))
-        solved=True
+        solved = True
         for childNode in childNodeList:
-            self.parent[childNode]=v
-            if self.getStatus(childNode)!=-1:
-                solved=solved & False
-            if solved==True:
+            self.parent[childNode] = v
+            if self.getStatus(childNode)!= -1:
+                solved = solved & False
+            if solved == True:
                 self.setStatus(v,-1)
-            self.solutionGraph[v]=childNodeList
-        if v!=self.start:
+            self.solutionGraph[v] = childNodeList
+        if v != self.start:
             self.aoStar(self.parent[v], True)
             if backTracking==False:
                 for childNode in childNodeList:
