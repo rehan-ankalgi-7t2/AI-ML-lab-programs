@@ -68,9 +68,24 @@ Write a program to demonstrate the working of the decision tree based ID3 Algori
 #### Task:
 
 ID3 determines the information gain for each candidate attribute the selects the one with highest information gain as the root node of the tree. the information gain values for all the four attributes are calculated using the following formula:
-`IG = -\{\( P / P+N \)log2\( P / P+N \) + \( N / P+N \)log2\( N / P+N \)}
-IG = \{ - \( P / P+N \)log2\( P / P+N \) - \( N / P+N \)log2\( N / P+N \)\}`
+`IG = -{( P / P+N )log2( P / P+N ) + ( N / P+N )log2( N / P+N )}`
 
 
 #### Dataset: Weather.csv
 
+| Day | Outlook  | Temperature | Humidity | Wind   | PlayTennis |
+| :---| :---     | :---        | :---     | :---   | :---       |
+| 1   | Sunny    | Hot         | High     | Weak   | No         |
+| 2   | Sunny    | Hot         | High     | Strong | No         |
+| 3   | Overcast | Hot         | High     | Weak   | Yes        |
+| 4   | Rain     | Mild        | High     | Weak   | Yes        |
+| 5   | Rain     | Cool        | Normal   | Weak   | Yes        |
+| 6   | Rain     | Cool        | Normal   | Strong | No         |
+| 7   | Overcast | Cool        | Normal   | Strong | Yes        |
+| 8   | Sunny    | Mild        | High     | Weak   | No         |
+| 9   | Sunny    | Cool        | Normal   | Weak   | Yes        |
+| 10  | Rain     | Mild        | Normal   | Weak   | Yes        |
+| 11  | Sunny    | Mild        | Normal   | Strong | Yes        |
+| 12  | Overcast | Mild        | High     | Strong | Yes        |
+| 13  | Overcast | Hot         | Normal   | Weak   | Yes        |
+| 14  | Rain     | Mild        | High     | Strong | No         |
