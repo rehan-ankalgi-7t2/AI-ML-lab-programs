@@ -70,6 +70,8 @@ Write a program to demonstrate the working of the decision tree based ID3 Algori
 ID3 determines the information gain for each candidate attribute the selects the one with highest information gain as the root node of the tree. the information gain values for all the four attributes are calculated using the following formula:
 `IG = -{( P / P+N )log2( P / P+N ) + ( N / P+N )log2( N / P+N )}`
 
+entropy: `Entropy(A) = IG(PiNi) * P(A)`
+
 
 #### Dataset: Weather.csv
 
