@@ -7,7 +7,7 @@ class Graph:
         self.status = {}
         self.solutionGraph = {}
 
-    def __applyAOStar__(self):
+    def applyAOStar(self):
         self.aoStar(self.start, False)
 
     def getNeighbors(self, v):
@@ -39,36 +39,46 @@ class Graph:
         for nodeInfoTupleList in self.getNeighbors(v):
             cost=0
             nodeList=[]
-        for c, weight in nodeInfoTupleList:
-            cost=cost+self.getHeuristicNodeValue(c)+weight
-            nodeList.append(c)
-        if flag==True:
-            minimumCost=cost
-            costToChildNodeListDict[minimumCost]=nodeList
-            return minimumCost, costToChildNodeListDict[minimumCost]
+            for c, weight in nodeInfoTupleList:
+                cost=cost+self.getHeuristicNodeValue(c)+weight
+                nodeList.append(c)
+            if flag==True:
+                minimumCost=cost
+                costToChildNodeListDict[minimumCost]=nodeList
+                flag = False
+            else:
+                if minimumCost > cost:
+                    minimumCost = cost
+                    costToChildNodeListDict[minimumCost] = nodeList
+        return minimumCost, costToChildNodeListDict[minimumCost]
 
     def aoStar(self, v, backTracking):
         print("HEURISTIC VALUES :", self.H)
         print("SOLUTION GRAPH :", self.solutionGraph)
         print("PROCESSING NODE :", v)
         print("-----------------------------------------------------------------------------------------")
+        
         if self.getStatus(v) >= 0:
             minimumCost, childNodeList = self.computeMinimumCostChildNodes(v)
-        self.setHeuristicNodeValue(v, minimumCost)
-        self.setStatus(v,len(childNodeList))
-        solved = True
+            self.setHeuristicNodeValue(v, minimumCost)
+            self.setStatus(v,len(childNodeList))
+            solved = True
+        
         for childNode in childNodeList:
             self.parent[childNode] = v
             if self.getStatus(childNode)!= -1:
                 solved = solved & False
-            if solved == True:
-                self.setStatus(v,-1)
+
+        if solved == True:
+            self.setStatus(v,-1)
             self.solutionGraph[v] = childNodeList
+
         if v != self.start:
             self.aoStar(self.parent[v], True)
-            if backTracking==False:
-                for childNode in childNodeList:
-                    self.setStatus(childNode,0)
+
+        if backTracking==False:
+            for childNode in childNodeList:
+                self.setStatus(childNode, 0)
                 self.aoStar(childNode, False)
                  
 h1 = {'A': 1, 'B': 6, 'C': 2, 'D': 12, 'E': 2, 'F': 1, 'G': 5, 'H': 7, 'I': 7, 'J': 1, 'T': 3}
@@ -82,7 +92,7 @@ graph1 = {
 }
                         
 G1 = Graph(graph1, h1, 'A')
-G1.__applyAOStar__()
+G1.applyAOStar()
 G1.printSolution()
 
 h2 = {'A': 1, 'B': 6, 'C': 12, 'D': 10, 'E': 4, 'F': 4, 'G': 5, 'H': 7}
@@ -94,5 +104,5 @@ graph2 = {
 }
 
 G2 = Graph(graph2, h2, 'A')
-G2.__applyAOStar__()
+G2.applyAOStar()
 G2.printSolution()
