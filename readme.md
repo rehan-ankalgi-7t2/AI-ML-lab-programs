@@ -195,7 +195,6 @@ write a program to implement K-nearest neighbors algorithm to classify the ==iri
 
 #### Output:
 
-`
 Result of classification using KNN with k=1
 | Sample: | [6.3 2.5 5.  1.9] | Actual-label: | 2 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
 | Sample: | [5.4 3.9 1.7 0.4] | Actual-label: | 0 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
@@ -213,7 +212,6 @@ Result of classification using KNN with k=1
 | Sample: | [7.4 2.8 6.1 1.9] | Actual-label: | 2 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
 | Sample: | [5.4 3.  4.5 1.5] | Actual-label: | 1 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
 Classification Accuracy:  1.0
-`
 
 ## experiment 8: Locally Weighted Regression
 
