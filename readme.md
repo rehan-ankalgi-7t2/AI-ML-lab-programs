@@ -127,27 +127,27 @@ Create an AI Network using ==Back Propagation== Algorithm
 
 #### input:
 
-'''
+`
 [[0.66666667 1.        ]
  [0.33333333 0.55555556]
  [1.         0.66666667]]
-'''
+`
 
 #### Actual Output:
 
-'''
+`
 [[0.92]
  [0.86]
  [0.89]]
-'''
+`
 
 #### Predicted Output:
 
-'''
- [[0.91577318]
+`
+[[0.91577318]
  [0.90864649]
  [0.91742677]]
-'''
+`
 
 ## experiment 6: KMeans and EM Clustering
 
@@ -195,25 +195,25 @@ write a program to implement K-nearest neighbors algorithm to classify the ==iri
 
 #### Output:
 
-'''
+`
 Result of classification using KNN with k=1
-Sample:  [6.3 2.5 5.  1.9] Actual-label:  2 Predicted-label:  [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1]
-Sample:  [5.4 3.9 1.7 0.4] Actual-label:  0 Predicted-label:  [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1]
-Sample:  [6.3 3.3 4.7 1.6] Actual-label:  1 Predicted-label:  [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1]
-Sample:  [5.8 2.7 5.1 1.9] Actual-label:  2 Predicted-label:  [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1]
-Sample:  [6.4 2.9 4.3 1.3] Actual-label:  1 Predicted-label:  [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1]
-Sample:  [5.1 3.5 1.4 0.3] Actual-label:  0 Predicted-label:  [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1]
-Sample:  [5.7 2.5 5.  2. ] Actual-label:  2 Predicted-label:  [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1]
-Sample:  [6.1 3.  4.6 1.4] Actual-label:  1 Predicted-label:  [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1]
-Sample:  [5.  2.  3.5 1. ] Actual-label:  1 Predicted-label:  [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1]
-Sample:  [6.9 3.1 5.1 2.3] Actual-label:  2 Predicted-label:  [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1]
-Sample:  [5.  3.5 1.3 0.3] Actual-label:  0 Predicted-label:  [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1]
-Sample:  [6.  2.2 4.  1. ] Actual-label:  1 Predicted-label:  [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1]
-Sample:  [5.  3.4 1.6 0.4] Actual-label:  0 Predicted-label:  [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1]
-Sample:  [7.4 2.8 6.1 1.9] Actual-label:  2 Predicted-label:  [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1]
-Sample:  [5.4 3.  4.5 1.5] Actual-label:  1 Predicted-label:  [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1]
+| Sample: | [6.3 2.5 5.  1.9] | Actual-label: | 2 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
+| Sample: | [5.4 3.9 1.7 0.4] | Actual-label: | 0 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
+| Sample: | [6.3 3.3 4.7 1.6] | Actual-label: | 1 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
+| Sample: | [5.8 2.7 5.1 1.9] | Actual-label: | 2 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
+| Sample: | [6.4 2.9 4.3 1.3] | Actual-label: | 1 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
+| Sample: | [5.1 3.5 1.4 0.3] | Actual-label: | 0 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
+| Sample: | [5.7 2.5 5.  2. ] | Actual-label: | 2 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
+| Sample: | [6.1 3.  4.6 1.4] | Actual-label: | 1 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
+| Sample: | [5.  2.  3.5 1. ] | Actual-label: | 1 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
+| Sample: | [6.9 3.1 5.1 2.3] | Actual-label: | 2 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
+| Sample: | [5.  3.5 1.3 0.3] | Actual-label: | 0 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
+| Sample: | [6.  2.2 4.  1. ] | Actual-label: | 1 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
+| Sample: | [5.  3.4 1.6 0.4] | Actual-label: | 0 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
+| Sample: | [7.4 2.8 6.1 1.9] | Actual-label: | 2 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
+| Sample: | [5.4 3.  4.5 1.5] | Actual-label: | 1 | Predicted-label: | [2 0 1 2 1 0 2 1 1 2 0 1 0 2 1] |
 Classification Accuracy:  1.0
-'''
+`
 
 ## experiment 8: Locally Weighted Regression
 
