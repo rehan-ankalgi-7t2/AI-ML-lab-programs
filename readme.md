@@ -109,11 +109,11 @@ entropy: `Entropy(A) = IG(PiNi) * P(A)`
 
 ## Experiment 5: Back Propagation Algorithm
 
-The Back Propagation algorithm learns the weights for a multilayer network, ==it employes gradient descent to attempt to minimize the sqaured error==
+The Back Propagation algorithm learns the weights for a multilayer network, **it employes gradient descent to attempt to minimize the sqaured error**
 
 #### Problem statement
 
-Create an AI Network using ==Back Propagation== Algorithm
+Create an AI Network using **Back Propagation** Algorithm
 
 #### Tasks
 
@@ -163,7 +163,7 @@ Clutering based on EM algorithm and K-means
 - [x] plot original classification using petal features
 - [x] plot model classifications
 - [x] General EM for GMM
-- [x] transform data such that its distribution will have ==mean value: 0== and ==standard deviation: 1==
+- [x] transform data such that its distribution will have **mean value: 0** and **standard deviation: 1**
 
 #### Output
 
@@ -180,7 +180,7 @@ Clutering based on EM algorithm and K-means
 
 #### Problem statement
 
-write a program to implement K-nearest neighbors algorithm to classify the ==iris== dataset, print both... correct and wrong predictions
+write a program to implement K-nearest neighbors algorithm to classify the **iris dataset**, print both... correct and wrong predictions
 
 #### Tasks
 
