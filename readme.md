@@ -186,7 +186,7 @@ write a program to implement K-nearest neighbors algorithm to classify the **iri
 
 - [x] import required packages
 - [x] load dataset
-- [x] split into data ==train== and ==test== samples
+- [x] split into data **train** and **test** samples
 - [x] print labels
 - [x] create object of KNN Classifier
 - [x] perform training
