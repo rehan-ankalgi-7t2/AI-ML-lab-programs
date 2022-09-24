@@ -29,28 +29,30 @@ bout = np.random.uniform(size=(1,output_neurons))
 
 # draws a random range of numbers uniformly of dim x*y 
 for i in range(epoch): 
+    
     # Forward Propogation 
     hinp1=np.dot(X,wh) 
     hinp=hinp1 + bh 
     hlayer_act = sigmoid(hinp) 
+    
     outinp1=np.dot(hlayer_act,wout) 
     outinp= outinp1+ bout 
     output = sigmoid(outinp) 
+    
     # Backpropagation 
     EO = y-output 
     outgrad = derivative_sigmoid(output)
     d_output = EO* outgrad 
+    
     EH = d_output.dot(wout.T) 
     hiddengrad = derivative_sigmoid(hlayer_act)
-    # how much hidden layer wts contributed to error
     d_hiddenlayer = EH * hiddengrad 
-    wout += hlayer_act.T.dot(d_output) *lr
-    # dotproduct of nextlayererror and currentlayerop
-    # bout += np.sum(d_output, axis=0,keepdims=True) *lr 
+    
+    wout += hlayer_act.T.dot(d_output) *lr 
     wh += X.T.dot(d_hiddenlayer) *lr 
-    # bh += np.sum(d_hiddenlayer, axis=0,keepdims=True) *lr 
-    print("Input: \n" + str(X)) 
-    print("Actual Output: \n" + str(Y)) 
-    print("Predicted Output: \n" ,output)
+    
+print("Input: \n" + str(X)) 
+print("Actual Output: \n" + str(Y)) 
+print("Predicted Output: \n" ,output)
 
 
